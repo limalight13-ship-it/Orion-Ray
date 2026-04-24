@@ -1,0 +1,21 @@
+# MCPize Configuration
+# Docs: https://mcpize.com/docs/mcpize-yaml
+
+version: 1
+
+name: "miniature-fiesta"
+slug: "miniature-fiesta-2"
+
+runtime: typescript
+entry: "src/index.ts"
+
+build:
+  install: "npm install"
+  command: "npm run build"
+
+start:
+  type: http
+  command: "node dist/index.js"
+
+bridge:
+  mode: http
